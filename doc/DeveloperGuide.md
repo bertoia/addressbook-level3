@@ -47,6 +47,7 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
 `* *` | user | hide [private contact details](#private-contact-detail) by default | to minimize chance of someone else seeing them by accident
 `* *` | user | find persons with tag | locate entries with a particular tag without having to go through the entire list 
+`* *` | user | edit tag | update existing tag with a new name 
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
 
 
@@ -65,6 +66,27 @@ Use case ends.
 **Extensions**
 
 2a. The list is empty
+
+> Use case ends
+
+#### Use case: Edit tag
+
+**MSS**
+
+1. User requests to edit a tag
+2. AddressBook comfirms the change with user
+3. User comfirms change
+4. AddressBook edits the tag <br>
+Use case ends.
+
+**Extensions**
+
+2a. Tag does not exist
+
+> 2a1. AddressBook shows an error message <br>
+  Use case ends
+
+3a. User reject change
 
 > Use case ends
 
