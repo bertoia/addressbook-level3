@@ -46,12 +46,27 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | delete a person | remove entries that I no longer need
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
 `* *` | user | hide [private contact details](#private-contact-detail) by default | to minimize chance of someone else seeing them by accident
+`* *` | user | find persons with tag | locate entries with a particular tag without having to go through the entire list 
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
 
 
 ## Appendix B : Use Cases
 
 (For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
+
+#### Use case: Find persons with tag
+
+**MSS**
+
+1. User requests to find persons with a specific tag
+2. AddressBook shows a list of persons <br>
+Use case ends.
+
+**Extensions**
+
+2a. The list is empty
+
+> Use case ends
 
 #### Use case: Delete person
 
